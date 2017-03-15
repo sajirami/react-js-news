@@ -1,0 +1,25 @@
+
+
+.marvel-data {
+    padding-right: 60px;
+    font-size: 125%;
+}
+
+.marvel-data i {
+    margin-right: 5px;
+    color: #CC0000;
+    vertical-align: middle;
+}
+
+.marvel-data p {
+    margin-bottom: 15px !important;
+}
+.marvel-data h5{
+ color: black;
+ font-weight: bolder;
+}
+
+.marvel-img {
+    max-height: 240px;
+    max-width: initial !important;
+}

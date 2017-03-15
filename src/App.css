@@ -1,3 +1,6 @@
+html{
+    height: 800px;
+}
 .App-logo {
     animation: App-logo-spin infinite 20s linear;
     height: 50px;
@@ -8,15 +11,18 @@
 
 .App-header {
     text-align: right;
-    background-color: #222;
-    height: 60px;
+    height: 90px;
     padding: 5px 10px;
-    color: white;
+    background-image: url(marvellogo.jpg);
+    background-repeat:no-repeat;
+    background-size: 1400px 90px;
 }
 
 .App-header h1 {
     font-weight: 300;
     font-size: 26px;
+    color:white;
+    font-weight: 600;
     margin: 0;
     padding: 0;
     vertical-align: middle;
@@ -24,7 +30,22 @@
 }
 
 .App-content {
+    height: 800px;
     padding: 20px;
+    background-image: url(share_temporary.jpg);    
+}
+.App-Input-content{
+    background-color: #b71c1c;
+}
+.App-Input-content input{
+    color:white;
+    font-weight: bold;
+}
+.App-Input-content label{
+    color:white;
+    font-weight: bold;
+    padding-left: 20px;
+    
 }
 
 @keyframes App-logo-spin {
@@ -34,4 +55,21 @@
 
 .error-toast {
     color: #e74c3c;
+}
+
+.waves-effect {
+  background-color: #b71c1c;
+}
+.waves-light {
+  background-color: #d32f2f;
+}
+
+.btn-marvel {
+  background-color: #b71c1c;
+}
+
+.btn-marvel:hover,
+.btn-marvel:focus {
+  background-color: #d74444 !important;
+  color: #fff;
 }

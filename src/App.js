@@ -38,19 +38,20 @@ class App extends Component {
                     <img src={ logo } className="App-logo" alt="logo" />
                 </div>
 
+                <div className="App-Input-content">
+                    <label style={ { fontSize: 22 } }>
+                        Enter your favorite Marvel Hero:
+                    </label>
+                    <input type='text' style={ { paddingLeft: 20 } } value={ this.state.personnage } onChange={ this.handleChange } />
+                </div>
                 <div className="App-content">
                     <div className="center-align">
 
                         <form onSubmit={ this.fetchPersonnage }>
-
-                            <button type="submit" className="waves-effect waves-light btn">
-                                Get some marvel!
+                            <button type="submit" className="waves-effect waves-light btn btn-marvel">
+                                Find your Marvel Hero!
                             </button>
-
                         </form>
-
-                        <input type='text' value={ this.state.personnage } onChange={ this.handleChange } />
-
                     </div>
 
                     <div className="row" style={ { marginTop: 20 } } >
@@ -108,6 +109,8 @@ class App extends Component {
                         title={ character.name }
                         text={ character.description }
                         urlImg={ character.thumbnail.path + "/portrait_xlarge." + character.thumbnail.extension }
+                        url={ character.urls[ 0 ].url }
+
 
 
                         />
